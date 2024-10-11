@@ -9,15 +9,8 @@
     </head>
     <body>
         <header>
-            <h1>Apoorva Joshi's Absurd Job &#x1F986; ITIS 3135</h1>
-            <hr>
-            <nav>
-                <a href="index.html">Homepage</a>
-                <a href="introduction.html" >Introduction</a>
-                <a href="contract.html">Contract</a>
-            </nav>
-            <hr>    
-        </header>
+            <div data-include="components/header.html"></div>
+         </header>
         <main>         
             <section>
                 <h2>Here is some additional information about me</h2>      
@@ -47,28 +40,13 @@
             </section>
         </main>
         <footer>
-            <p>Page built by AbsurdJob &copy;2024</p>   
-            <nav>  
-                <a target="_blank" href="https://webpages.charlotte.edu/ajoshi46/">Webspace</a> 
-                <a target="_blank" href="http://ajoshi4624.github.io">GitHub Pages</a>
-                <a target="_blank" href="http://ajoshi4624.github.io/itis3135">GitHub Course Page</a>
-                <a target="_blank" href="https://www.freecodecamp.org/ajoshi46">Freecodecamp</a>
-                <a target="_blank" href="https://www.codecademy.com/profiles/ajoshi46">Codeacademy</a>
-            </nav> 
-            <hr>
-            <a target="_blank"  href="https://www.freecodecamp.org/certification/ajoshi46/responsive-web-design"><em>Certified in Responsive Web Design</em></a>
-            <hr>
-            <a id="validate-html">
-                <img src="images/html_validation.png" alt="html validation">
-            </a>
-            <a id="validate-css">
-                <img src="images/vcss.png" alt="css validation">
-            </a>
-        </footer>
+            <div data-include="components/footer.html"></div>
+         </footer>
         <script>
             document.getElementById("validate-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
             document.getElementById("validate-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
          </script>
+         <script src="scripts/HTMLInclude.min.js"></script>
     </body>
     
 </html>

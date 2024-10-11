@@ -1,7 +1,7 @@
 body {
     font-family: 'Tahoma', sans-serif;
-    color: #cc6c7a;
-    background-color: #90d2d8;
+    color: #23022e;
+    background-color: #bcd2ee;
     font-size: 1.4em;
     box-sizing: border-box;
     padding: 0;
@@ -20,7 +20,7 @@ body {
   }
 
   a {
-    color: #c78f61;
+    color: #8C271E;
     text-decoration: none;
   }
   
@@ -36,7 +36,7 @@ body {
 
   hr {
     border: none;
-    background: #b7ded2;
+    background: #23022e;
     height: 5px;
   }
 
