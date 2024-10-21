@@ -11,8 +11,8 @@ body {
 main,
 header,
 footer {
-  width: 94%;
-  max-width: 900px;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -132,21 +132,48 @@ button[type="reset"]:hover {
 }
 
 
+
+
 @media (max-width: 600px) {
+  main, header, footer {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   form {
-      padding: 15px;
-      margin: 10px;
+    padding: 15px;
+    margin: 10px;
   }
 
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  select {
-      font-size: 14px;
+  input[type="text"], input[type="email"], input[type="tel"], select {
+    font-size: 14px;
   }
 
-  button[type="submit"],
-  button[type="reset"] {
-      font-size: 14px;
+  button[type="submit"], button[type="reset"] {
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  main, header, footer {
+    width: 92%;
+    max-width: 1000px;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+}
+
+
+@media (min-width: 1025px) {
+  main, header, footer {
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  form {
+    padding: 20px;
   }
 }
