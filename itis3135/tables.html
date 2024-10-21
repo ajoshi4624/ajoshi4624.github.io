@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>HTML Tables - Company</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/images/sloth.png">
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <section>
+            <h2>HTML Tables - Company</h2>
+        </section>
+        <hr>
+        <section>
+            <h3>My Tabular Data</h3>
+            <ol>
+                <li>Niall Horan niallhoran@absurdjobmarketing.com 14</li>
+                <li>Harry Styles harrystyles@absurdjobmarketing.com 14</li>
+                <li>Taylor Swift taylorswift@absurdjobmarketing.com 18</li>
+                <li>Olivia Rodrigo oliviarodrigo@absurdjobmarketing.com 3</li>
+                <li>Kendrick Lamar kendricklamar@absurdjobmarketing.com 14</li>
+                <li>Dylan Minnette dylanminnette@absurdjobmarketing.com 7</li>
+                <li>Post Malone postmalone@absurdjobmarketing.com 7</li>
+            </ol>
+            <h3>Employee Data in Simple Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email Address</th>
+                        <th>Years of Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Niall Horan</td>
+                        <td>niallhoran@absurdjobmarketing.com</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>Harry Styles</td>
+                        <td>harrystyles@absurdjobmarketing.com</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>Taylor Swift</td>
+                        <td>taylorswift@absurdjobmarketing.com</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>Olivia Rodrigo</td>
+                        <td>oliviarodrigo@absurdjobmarketing.com</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Kendrick Lamar</td>
+                        <td>kendricklamar@absurdjobmarketing.com</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>Dylan Minnette</td>
+                        <td>dylanminnette@absurdjobmarketing.com</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Post Malone</td>
+                        <td>postmalone@absurdjobmarketing.com</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Employee Data in Complex Table</h3>
+            <figure>
+            <table>
+                <caption>Employee Information</caption>
+                <thead>
+                    <tr>
+                        <th>Line of Business</th>
+                        <th>Name</th>
+                        <th>Email Address</th>
+                        <th>Years of Service</th>
+                        <th>Monthly Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Marketing</td>
+                        <td>Niall Horan</td>
+                        <td>niallhoran@absurdjobmarketing.com</td>
+                        <td>14</td>
+                        <td>$1,000,000</td>
+
+                    </tr>
+                    <tr>
+                        
+                        <td>Harry Styles</td>
+                        <td>harrystyles@absurdjobmarketing.com</td>
+                        <td>14</td>
+                        <td>$1,234,000</td>
+                    </tr>
+                    <tr>
+                        <td>Producer, Artist</td>
+                        <td>Taylor Swift</td>
+                        <td>taylorswift@absurdjobmarketing.com</td>
+                        <td>18</td>
+                        <td>$4,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Artist</td>
+                        <td>Olivia Rodrigo</td>
+                        <td>oliviarodrigo@absurdjobmarketing.com</td>
+                        <td>3</td>
+                        <td>$1,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Producer</td>
+                        <td>Kendrick Lamar</td>
+                        <td>kendricklamar@absurdjobmarketing.com</td>
+                        <td>14</td>
+                        <td>$2,345,000</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Marketing</td>
+                        <td>Dylan Minnette</td>
+                        <td>dylanminnette@absurdjobmarketing.com</td>
+                        <td>7</td>
+                        <td>$1,000,000</td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Post Malone</td>
+                        <td>postmalone@absurdjobmarketing.com</td>
+                        <td>7</td>
+                        <td>$1,000,000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="text-align: right;">Total Annual Salary Budget:</td>
+                        <td>$11,579,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </figure>
+        </section>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validate-html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validate-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+
+</html>
