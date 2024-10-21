@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>HTML Forms - Company</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/images/sloth.248x256.png">
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <section>
+            <h2>HTML Forms - Company</h2>
+        </section>
+        <hr>
+        <section>
+            <form action="#" method="POST">
+                
+                <label for="user-name">Full Name:</label>
+                <input type="text" id="user-name" name="user-name" placeholder="Enter your full name" required>
+                <br><br>
+
+                
+                <label for="user-phone">Phone Number:</label>
+                <input type="tel" id="user-phone" name="user-phone" placeholder="123-456-7890" required>
+                <br><br>
+
+                
+                <label for="user-email">Email Address:</label>
+                <input type="email" id="user-email" name="user-email" placeholder="your.email@example.com" required>
+                <br><br>
+
+                
+                <fieldset>
+                    <legend>Which music genres do you prefer?</legend>
+                    <label><input type="checkbox" name="genre" value="rock"> Rock</label>
+                    <label><input type="checkbox" name="genre" value="pop"> Pop</label>
+                    <label><input type="checkbox" name="genre" value="hiphop"> Hip-Hop</label>
+                    <label><input type="checkbox" name="genre" value="jazz"> Jazz</label>
+                </fieldset>
+                <br>
+
+                
+                <fieldset>
+                    <legend>Do you want to receive marketing emails?</legend>
+                    <label><input type="radio" name="marketing-preference" value="yes" required> Yes</label>
+                    <label><input type="radio" name="marketing-preference" value="no"> No</label>
+                </fieldset>
+                <br>
+
+                
+                <label for="music-platform">Favorite Music Streaming Platform:</label>
+                <select id="music-platform" name="music-platform" required>
+                    <option value="">Select an option</option>
+                    <option value="spotify">Spotify</option>
+                    <option value="apple-music">Apple Music</option>
+                    <option value="youtube-music">YouTube Music</option>
+                    <option value="tidal">Tidal</option>
+                </select>
+                <br><br>
+
+                
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validate-html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validate-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
