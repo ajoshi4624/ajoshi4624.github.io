@@ -98,3 +98,7 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
+
+.lr {
+  text-align: right;
+}
