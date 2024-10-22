@@ -177,3 +177,8 @@ button[type="reset"]:hover {
     padding: 20px;
   }
 }
+
+.largeimg {
+  height: 70%;
+  width: 70%;
+}
