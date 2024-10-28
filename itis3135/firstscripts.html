@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Scripts</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" href="/images/sloth.248x256.png">
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+         </header>
+         <main>
+            <h2>Welcome to the First Scripts Page</h2>
+            <h3 id="dateDisplay"></h3>
+            <form id="userInfoForm" onsubmit="return handleFormSubmit();">
+              <label for="nameInput">What's your name?</label>
+              <input type="text" id="nameInput" required>
+        
+              <label for="moodInput">How are you feeling?</label>
+              <input type="text" id="moodInput" required>
+        
+              <label for="favNumberInput">Enter your favorite number (0-10):</label>
+              <input type="number" id="favNumberInput" min="0" max="10" step="1" required>
+        
+              <button type="submit">Submit</button>
+            </form>
+        
+            <div id="greeting"></div>
+        
+            
+            <button onclick="generateGooseName()">Generate Goose Name</button>
+            <button onclick="recommendGooseFarm()">Recommend Goose Farm</button>
+            <button onclick="predictGooseMood()">Predict Goose Mood</button>
+            <button onclick="displayGoosePhrase()">Display Goose Phrase</button>
+         </main>
+         <footer>
+            <div data-include="components/footer.html"></div>
+         </footer>
+        <script>
+            document.getElementById("validate-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validate-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+         </script>
+         <script src="scripts/HTMLInclude.min.js"></script>
+         <script src="scripts/defaultscripts.js"></script>
+    </body>
+</html>
