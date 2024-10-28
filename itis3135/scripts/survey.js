@@ -1,5 +1,8 @@
 
-function displayIntro() {
+
+  
+  
+  function displayIntro() {
     const name = document.getElementById('name').value;
     const mascot = document.getElementById('mascot').value;
     const imageUpload = document.getElementById('imageUpload').files[0];
@@ -9,7 +12,7 @@ function displayIntro() {
     const academicBackground = document.getElementById('academicBackground').value;
     const webDevBackground = document.getElementById('webDevBackground').value;
     const platform = document.getElementById('platform').value;
-    const courses = Array.from(document.getElementsByName('courses')).map(course => course.value);
+    const courses = Array.from(document.getElementsByName('courses')).map((course) => course.value);
     const funnyThing = document.getElementById('funnyThing').value;
     const anythingElse = document.getElementById('anythingElse').value;
   
@@ -31,16 +34,16 @@ function displayIntro() {
     `;
     displaySection.style.display = 'block';
   }
-
-
-function handleFormSubmit() {
+  
+  
+  function handleFormSubmit() {
     const form = document.getElementById('introForm');
     if (!form.checkValidity()) {
       alert("Please fill out all required fields.");
       return false;
     }
   
-    
+   
     displayIntro();
   
     
@@ -49,7 +52,7 @@ function handleFormSubmit() {
     return false; 
   }
   
- 
+  
   function resetFormProgress() {
     document.getElementById('introForm').reset();
     document.getElementById('introForm').style.display = 'block';
@@ -79,5 +82,23 @@ function handleFormSubmit() {
     coursesSection.appendChild(newCourseDiv);
   }
   
- 
- 
+  document.addEventListener("DOMContentLoaded", () => {
+    
+    const form = document.getElementById("introForm");
+    form.addEventListener("submit", (event) => {
+      event.preventDefault(); 
+      handleFormSubmit();
+    });
+  
+   
+    const addCourseButton = document.getElementById("addCourseButton");
+    addCourseButton.addEventListener("click", () => {
+      addCourseField();
+    });
+  
+    
+    const resetButton = document.getElementById("resetButton");
+    resetButton.addEventListener("click", () => {
+      resetFormProgress();
+    });
+  });

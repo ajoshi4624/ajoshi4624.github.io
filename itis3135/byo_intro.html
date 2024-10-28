@@ -19,7 +19,7 @@
         <h3>Time to build an intro page, please fill out the form below so we can create your own page.</h3>
 
         
-        <form id="intro-form" onsubmit="return handleFormSubmit();">
+        <form id="intro-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br>
 
@@ -50,7 +50,7 @@
             
             <div id="courses-section">
                 <label>Courses currently taking:</label>
-                <button type="button" onclick="addCourseField()">Add Course</button>
+                <button type="button">Add Course</button>
             </div>
 
             <label for="funny-thing">Funny thing?</label>
@@ -67,11 +67,11 @@
 
            
             <input type="submit" value="Submit">
-            <input type="reset" value="Reset" onclick="resetFormProgress()">
+            <input type="reset" value="Reset">
         </form>
 
         
-        <section id="intro-display" style="display: none;"></section>
+        <section id="intro-display"></section>
 
     </main>
     <footer>
