@@ -147,6 +147,9 @@ button[type="reset"]:hover {
 
   input[type="text"], input[type="email"], input[type="tel"], select {
     font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    font-style: italic;
   }
 
   button[type="submit"], button[type="reset"] {
