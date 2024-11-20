@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/akkafavicon.png">
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome!</h2>
+            
+            <p>
+                With a proven track record in both classroom settings and one-on-one tutoring, I am committed to helping
+                students achieve academic success. Let’s embark on a journey of discovery and learning together!
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validate-html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validate-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+
+</html>

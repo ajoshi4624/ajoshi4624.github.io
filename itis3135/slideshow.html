@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>3135 Course Site</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/sloth.248x256.png">
+
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <section>
+            <h2>Slideshow</h2>
+            <div class="slideshow-container">
+                <div class="slides fade">
+                    <img src="images/apple.jpg" alt="Apple">
+                    <div class="caption">A - Apple</div>
+                </div>
+                <div class="slides fade">
+                    <img src="images/pineapple.jpg" alt="Pineapple">
+                    <div class="caption">P - Pineapple</div>
+                </div>
+                <div class="slides fade">
+                    <img src="images/oak.jpg" alt="Oak">
+                    <div class="caption">O - Oak</div>
+                </div>
+                <div class="slides fade">
+                    <img src="images/owl.jpg" alt="Owl">
+                    <div class="caption">O - Owl</div>
+                </div>
+                <div class="slides fade">
+                    <img src="images/rose.jpg" alt="Rose">
+                    <div class="caption">R- Rose</div>
+                </div>
+                <div class="slides fade">
+                    <img src="images/vase.jpg" alt="Vase">
+                    <div class="caption">V - Vase</div>
+                </div>
+                <div class="slides fade">
+                    <img src="images/airplane.jpg" alt="Airplane">
+                    <div class="caption">A - Airplane</div>
+                </div>
+                <div class="slides fade">
+                    <img src="images/jellyfish.jpg" alt="Jellyfish">
+                    <div class="caption">J - Jellyfish</div>
+                </div>
+                <div class="slides fade">
+                    <img src="images/octopus.jpg" alt="Octopus">
+                    <div class="caption">O - Octopus</div>
+                </div>
+                <div class="slides fade">
+                    <img src="images/sunflower.jpg" alt="Sunflower">
+                    <div class="caption">S - Sunflower</div>
+                </div>
+                <div class="slides fade">
+                    <img src="images/hat.jpg" alt="Hat">
+                    <div class="caption">H - Hat</div>
+                </div>S
+                <div class="slides fade">
+                    <img src="images/ice.jpg" alt="Ice">
+                    <div class="caption">I - Ice</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+            <div class="thumbnail-container">
+                <img src="images/apple.jpg" alt="Apple" class="thumbnail" onclick="currentSlide(1)">
+                <img src="images/pineapple.jpg" alt="Pineapple" class="thumbnail" onclick="currentSlide(2)">
+                <img src="images/oak.jpg" alt="Oak" class="thumbnail" onclick="currentSlide(3)">
+                <img src="images/owl.jpg" alt="Owl" class="thumbnail" onclick="currentSlide(4)">
+                <img src="images/rose.jpg" alt="Rose" class="thumbnail" onclick="currentSlide(5)">
+                <img src="images/vase.jpg" alt="Vase" class="thumbnail" onclick="currentSlide(6)">
+                <img src="images/airplane.jpg" alt="Airplane" class="thumbnail" onclick="currentSlide(7)">
+                <img src="images/jellyfish.jpg" alt="Jellyfish" class="thumbnail" onclick="currentSlide(8)">
+                <img src="images/octopus.jpg" alt="Octopus" class="thumbnail" onclick="currentSlide(9)">
+                <img src="images/sunflower.jpg" alt="Sunflower" class="thumbnail" onclick="currentSlide(10)">
+                <img src="images/hat.jpg" alt="Hat" class="thumbnail" onclick="currentSlide(11)">
+                <img src="images/ice.jpg" alt="Ice" class="thumbnail" onclick="currentSlide(12)">
+            </div>
+
+
+        </section>
+        <section class="ai-generation">
+            <h2>AI Generation Prompts and Tool Used</h2>
+            <p>The following images were generated using the AI tool <strong>DeepDreamGenerator.com</strong> with the respective prompts:</p>
+            <ul>
+                <li><strong>A - Apple:</strong> "Apple"</li>
+                <li><strong>P - Pineapple:</strong> "Pineapple"</li>
+                <li><strong>O - Oak:</strong> "Oak"</li>
+                <li><strong>O - Owl:</strong> "Owl"</li>
+                <li><strong>R - Rose:</strong> "Rose"</li>
+                <li><strong>V - Vase:</strong> "Vase"</li>
+                <li><strong>A - Airplane:</strong> "Airplane"</li>
+                <li><strong>J - Jellyfish:</strong> "Jellyfish"</li>
+                <li><strong>O - Octopus:</strong> "Octopus"</li>
+                <li><strong>S - Sunflower:</strong> "Sunflower"</li>
+                <li><strong>H - Hat:</strong> "Hat"</li>
+                <li><strong>I - Ice:</strong> "Ice"</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validate-html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validate-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/slideshow.js"></script>
+</body>
+
+</html>

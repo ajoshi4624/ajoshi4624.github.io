@@ -1,0 +1,70 @@
+body {
+    font-family: 'Georgia', serif;
+    color: #292f36;
+    background-color: #afc1d6;
+    font-size: 1.4em;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  main,
+  header,
+  footer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h1,
+  h2 {
+    font-family:  'Georgia', serif;
+    text-align: center;
+  }
+
+  a {
+    color: #bb342f;
+    text-decoration: none;
+  }
+
+  nav {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #aa4465;
+  }
+  
+  hr {
+    border: none;
+    background: #bb342f;
+    height: 5px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  main figure img {
+    height: 20%;
+    width: 20%;
+  }
+
+  .image-text {
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    margin: 20px 0;
+  }
+  
+  .image-text img {
+    width: 90%; /* Adjust this percentage to change image size */
+    max-width: 300px; /* Limits the image width on larger screens */
+    margin-right: 15px;
+  }
+  
+  .image-text p {
+    flex: 1; /* Allows paragraph to take the remaining space */
+  }

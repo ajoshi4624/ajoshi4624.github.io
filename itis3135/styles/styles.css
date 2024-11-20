@@ -17,7 +17,7 @@ footer {
 }
 
 header {
-  font-size: smaller;
+  font-size: 20px;
 }
 
 h1,
@@ -184,4 +184,94 @@ button[type="reset"]:hover {
 .largeimg {
   height: 70%;
   width: 70%;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Hide all slides by default */
+.mySlides {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+/* Navigation buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Caption style */
+.caption {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+/* Thumbnail container */
+.thumbnail-container {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.thumbnail:hover {
+  border-color: #ddd;
+}
+
+/* Active thumbnail */
+.thumbnail.active {
+  border-color: #f1f1f1;
+}
+
+/* Fade animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* Caption for the slideshow */
+#caption {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #333;
 }

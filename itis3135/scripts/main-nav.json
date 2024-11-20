@@ -1,0 +1,8 @@
+[
+    {"name": "Homepage", "url": "index.html"},
+    {"name": "Introduction", "url": "introduction.html"},
+    {"name": "Contract", "url": "contract.html"},
+    {"name": "Website Evaluations", "url": "website_evaluations.html"},
+    {"name": "Company Page", "url": "about.html"},
+    {"name": "Slideshow", "url": "slideshow.html"}
+]

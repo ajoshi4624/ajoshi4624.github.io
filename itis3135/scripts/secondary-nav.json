@@ -1,0 +1,9 @@
+[
+    {"name": "HTML Tables - Company", "url": "tables.html"},
+    {"name": "HTML Forms - Company", "url": "forms.html"},
+    {"name": "Project Overview", "url": "project_overview.html"},
+    {"name": "First Scripts", "url": "firstscripts.html"},
+    {"name": "BYO Intro", "url": "byo_intro.html"},
+    {"name": "Hobby", "url": "hobby/index.html"},
+    {"name": "Drawing", "url": "drawing.html"}
+]
