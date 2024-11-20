@@ -21,7 +21,7 @@ function setup() {
     rect(0, 200, 600, 200);
    
     
-    textSize(75)
-    text("🌸", 100, 250) 
-    text("🐞", 300, 250) 
+    textSize(75);
+    text("🌸", 100, 250); 
+    text("🐞", 300, 250);
   }

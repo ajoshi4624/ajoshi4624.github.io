@@ -31,15 +31,37 @@ function populateFooter(footerId, data) {
     // Clear any existing content in the footer container
     footerContainer.innerHTML = '';
 
-    // Create and append footer items
-    data.forEach((item) => {  // Corrected parentheses for arrow function
+    // First, add all non-certification links (e.g., social links)
+    data.forEach((item) => {
         const footerItem = document.createElement("a");
         footerItem.classList.add("footer-item");
         footerItem.textContent = item.name;
         footerItem.href = item.url;  // Assuming each footer item has a 'url' property in JSON
 
         footerContainer.appendChild(footerItem);
+
+        // Optionally add <hr> after each item, except the last social link
+        footerContainer.appendChild(document.createElement("hr"));
     });
+
+    // Now handle the certification links separately, adding <hr> between them
+    const certifications = data.filter((item) => item.type === 'certification'); // Assuming 'type' field distinguishes certifications
+
+    if (certifications.length > 0) {
+        certifications.forEach((item, index) => {
+            const certItem = document.createElement("a");
+            certItem.classList.add("footer-item");
+            certItem.textContent = item.name;
+            certItem.href = item.url;
+
+            footerContainer.appendChild(certItem);
+
+            // Insert an <hr> after each certification link except the last one
+            if (index < certifications.length - 1) {
+                footerContainer.appendChild(document.createElement("hr"));
+            }
+        });
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function() {

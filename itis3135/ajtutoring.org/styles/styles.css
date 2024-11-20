@@ -1,70 +1,304 @@
 body {
-    font-family: 'Georgia', serif;
-    color: #292f36;
-    background-color: #afc1d6;
-    font-size: 1.4em;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
+  font-family: 'Georgia', serif;
+  color: #292f36;
+  background-color: #afc1d6;
+  font-size: 1.4em;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-  main,
-  header,
-  footer {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+main,
+header,
+footer {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  h1,
-  h2 {
-    font-family:  'Georgia', serif;
-    text-align: center;
-  }
+h1,
+h2 {
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
 
-  a {
-    color: #bb342f;
-    text-decoration: none;
-  }
+a {
+  color: #414361;
+  text-decoration: none;
+}
 
-  nav {
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-    color: #aa4465;
-  }
-  
-  hr {
-    border: none;
-    background: #bb342f;
-    height: 5px;
-  }
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
 
-  footer {
-    text-align: center;
-  }
+a:hover {
+  text-decoration: underline;
+  color: #aa4465;
+}
 
-  main figure img {
-    height: 20%;
-    width: 20%;
-  }
+hr {
+  border: none;
+  background: #ce796b;
+  height: 5px;
+}
 
+footer {
+  text-align: center;
+}
+
+/* Style for the About section */
+.about-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Flexbox for layout of image and text */
+.image-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/* Styling for the image */
+.image-text figure img {
+  width: 100%;
+  max-width: 250px;  /* Limits image size */
+  height: auto;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+/* Text content styling */
+.text-content {
+  flex: 1;
+  max-width: 700px;
+}
+
+.text-content-p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
   .image-text {
-    display: flex;
-    align-items: center; /* Vertically centers the content */
-    margin: 20px 0;
+      flex-direction: column; /* Stacks image and text on small screens */
+      align-items: center;
+      text-align: center;
   }
-  
-  .image-text img {
-    width: 90%; /* Adjust this percentage to change image size */
-    max-width: 300px; /* Limits the image width on larger screens */
-    margin-right: 15px;
+
+  .image-text figure img {
+      max-width: 80%; /* Makes image responsive */
+      margin-right: 0; /* Remove margin for smaller screens */
   }
-  
-  .image-text p {
-    flex: 1; /* Allows paragraph to take the remaining space */
+
+  .text-content {
+      max-width: 90%; /* Makes text container more flexible on smaller screens */
   }
+}
+
+.welcome-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.welcome-h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.welcome-p {
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.medium-img {
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+form {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1.2em;
+}
+
+form input[type="tel"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  border-color: #aa4465;
+  outline: none;
+  box-shadow: 0 0 5px rgba(170, 68, 101, 0.5);
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background-color: #414361;
+  color: white;
+  font-size: 1.4em;
+  padding: 10px 20px;
+  font-family: 'Georgia', serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ce796b;
+}
+
+form button:focus {
+  outline: auto;
+}
+
+.pricing-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.pricing-option {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-size: 1.4em;
+  font-family: 'Georgia', serif;
+  color: #292f36;
+}
+
+.pricing-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pricing-tier {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  width: 280px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: #aa4465;
+}
+
+.pricing-tier p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.pricing-tier strong {
+  font-size: 1.2em;
+  color: #292f36;
+}
+
+.pricing-tier p:last-child {
+  margin-bottom: 0;
+}
+
+.testimonials-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.testimonial {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.client-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-size: 1.5em;
+  color: #aa4465; /* Gold color for stars */
+}
+
+.star {
+  font-size: 1.8em;
+  margin: 0 2px;
+  color: #8c8787; /* Light gray for empty stars */
+}
+
+.star-filled {
+  color: #aa4465; /* Gold for filled stars */
+}
+
+.center-text {
+  text-align: center;
+}
+
+.container {
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px; /* Optional: for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  max-width: 1200px; /* Optional: set a maximum width */
+}
