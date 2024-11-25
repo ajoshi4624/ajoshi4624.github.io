@@ -6,7 +6,7 @@
   
  
   function resetForm() {
-    document.getElementById("userForm").reset();
+    document.getElementById("user-info-form").reset();
   }
   
   
@@ -87,8 +87,8 @@
   }
 
   function handleFormSubmit() {
-    const name = document.getElementById("nameInput").value;
-    const mood = document.getElementById("moodInput").value;
+    const name = document.getElementById("name-input").value;
+    const mood = document.getElementById("mood-input").value;
   
     
     document.getElementById("greeting").innerText = 
@@ -106,25 +106,19 @@
   
 document.addEventListener("DOMContentLoaded", () => {
     
-    const form = document.getElementById("userForm"); 
+    const form = document.getElementById("user-info-form"); 
     form.addEventListener("submit", (event) => {
       event.preventDefault(); 
+      
       handleFormSubmit();
     });
   
-    
-    const resetButton = document.getElementById("resetButton");
-    resetButton.addEventListener("click", resetForm);
-  
-    
-    const addCourseButton = document.getElementById("addCourseButton");
-    addCourseButton.addEventListener("click", addCourseField);
-  
+
    
-    document.getElementById("generateGooseNameButton").addEventListener("click", generateGooseName);
-    document.getElementById("recommendGooseFarmButton").addEventListener("click", recommendGooseFarm);
-    document.getElementById("predictGooseMoodButton").addEventListener("click", predictGooseMood);
-    document.getElementById("displayGoosePhraseButton").addEventListener("click", displayGoosePhrase);
+    document.getElementById("generate-goose-name-button").addEventListener("click", generateGooseName);
+    document.getElementById("recommend-goose-farm-button").addEventListener("click", recommendGooseFarm);
+    document.getElementById("predict-goose-mood-button").addEventListener("click", predictGooseMood);
+    document.getElementById("display-goose-phrase-button").addEventListener("click", displayGoosePhrase);
   
     
   });

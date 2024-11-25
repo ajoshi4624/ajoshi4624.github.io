@@ -1,0 +1,51 @@
+{
+    "mainnav": [
+    {"name": "Homepage", "url": "index.html"},
+    {"name": "Introduction", "url": "introduction.html"},
+    {"name": "Contract", "url": "contract.html"},
+    {"name": "Website Evaluations", "url": "website_evaluations.html"},
+    {"name": "Company Page", "url": "about.html"},
+    {"name": "Slideshow", "url": "slideshow.html"},
+    {"name": "Client Project", "url": "ajtutoring.org/index.html"}
+],
+"secondarynav": [
+    {"name": "HTML Tables - Company", "url": "tables.html"},
+    {"name": "HTML Forms - Company", "url": "forms.html"},
+    {"name": "Project Overview", "url": "project_overview.html"},
+    {"name": "First Scripts", "url": "firstscripts.html"},
+    {"name": "BYO Intro", "url": "byo_intro.html"},
+    {"name": "Hobby", "url": "hobby/index.html"},
+    {"name": "Drawing", "url": "drawing.html"}
+],
+"extranav":[
+    {"name": "CRAPPY Website", "url": "stuff/CRAPPy&.html"}
+],
+"footersocial": [
+    {"name": "Webspace", "url": "https://webpages.charlotte.edu/ajoshi46/"},
+    {"name": "GitHub Profile", "url": "https://github.com/ajoshi4624"},
+    {"name": "GitHub.io", "url": "http://ajoshi4624.github.io"},
+    {"name": "GitHub 3135 Page", "url": "http://ajoshi4624.github.io/itis3135"},
+    {"name": "Freecodecamp", "url": "https://www.freecodecamp.org/ajoshi46"},
+    {"name": "Codeacademy", "url": "https://www.codecademy.com/profiles/ajoshi46"}
+],
+"footercertifications": [
+    {
+        "name": "Certified in Responsive Web Design",
+        "url": "https://www.freecodecamp.org/certification/ajoshi46/responsive-web-design"
+    },
+    {
+        "name": "Certified in Javascript Algorithms and Data Structures",
+        "url": "https://www.freecodecamp.org/certification/ajoshi46/javascript-algorithms-and-data-structures-v8"
+    }
+   
+],
+"designedBy":
+[
+    {
+        "name": "Page built by Apoorva Joshi Design Labs",
+        "url": "apoorvajoshidesignlabs.com/index.html"
+    }
+]
+
+}
+

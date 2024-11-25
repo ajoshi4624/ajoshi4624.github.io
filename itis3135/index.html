@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/styles.css">
-        <title>3135 Course Site</title>
-        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-        <link rel="icon" type="image/png" href="images/sloth.248x256.png">
-        <style>
-            .p {
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-           <div data-include="components/header.html"></div>
-        </header>
-        <main>
-            <section>
-                <h2>Look around my site!</h2>
-                <p class="p">Click on the quick links below to browse through my page</p>
-            </section>   
-        </main>
-        <footer>
-           <div data-include="components/footer.html"></div>
-        </footer>
-        <script>
-            document.getElementById("validate-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-            document.getElementById("validate-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-         </script>
-         <script src="scripts/HTMLInclude.min.js"></script>
-         <script src="scripts/script.js"></script>
-    </body>
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>3135 Course Site</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/sloth.248x256.png">
+    <style>
+        .p {
+            text-align: center;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+   
+        <div id="header"></div>
+        <hr>
+
+    <main>
+        <section>
+            <h2>Look around my site!</h2>
+            <p class="p">Click on the quick links below to browse through my page</p>
+        </section>
+    </main>
+<hr>
+    <div id="footer"></div>
+
+
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
 </html>

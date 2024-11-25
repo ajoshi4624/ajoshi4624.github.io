@@ -224,9 +224,10 @@ button[type="reset"]:hover {
   padding: 10px 15px;
   position: absolute;
   bottom: 8px;
-  /*width: 100%;*/
+  width: 100%;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
   
 }
 

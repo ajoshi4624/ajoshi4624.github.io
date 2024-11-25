@@ -8,10 +8,12 @@
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
         <link rel="icon" type="image/png" href="images/sloth.248x256.png">
     </head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    </script>
     <body>
-        <header>
-            <div data-include="components/header.html"></div>
-         </header>
+        <div id="header"></div>
+        <hr>
          <main>
             <h2>Welcome to the First Scripts Page</h2>
             <h3 id="date-display"></h3>
@@ -31,18 +33,14 @@
             <div id="greeting"></div>
         
             
-            <button>Generate Goose Name</button>
-            <button>Recommend Goose Farm</button>
-            <button>Predict Goose Mood</button>
-            <button>Display Goose Phrase</button>
+            <button id="generate-goose-name-button">Generate Goose Name</button>
+            <button id="recommend-goose-farm-button">Recommend Goose Farm</button>
+            <button id="predict-goose-mood-button">Predict Goose Mood</button>
+            <button id="display-goose-phrase-button">Display Goose Phrase</button>
          </main>
-         <footer>
-            <div data-include="components/footer.html"></div>
-         </footer>
-        <script>
-            document.getElementById("validate-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-            document.getElementById("validate-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-         </script>
+         <hr>
+         <div id="footer"></div>
+        
          <script src="scripts/HTMLInclude.min.js"></script>
          <script src="scripts/defaultscripts.js"></script>
          <script src="scripts/script.js"></script>
