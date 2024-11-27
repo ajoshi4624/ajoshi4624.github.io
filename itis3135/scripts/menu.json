@@ -6,7 +6,8 @@
     {"name": "Website Evaluations", "url": "website_evaluations.html"},
     {"name": "Company Page", "url": "about.html"},
     {"name": "Slideshow", "url": "slideshow.html"},
-    {"name": "Client Project", "url": "ajtutoring.org/index.html"}
+    {"name": "Client Project", "url": "ajtutoring.org/index.html"},
+    {"name": "Peer Review 1", "url": "review1.html"}
 ],
 "secondarynav": [
     {"name": "HTML Tables - Company", "url": "tables.html"},
@@ -15,12 +16,12 @@
     {"name": "First Scripts", "url": "firstscripts.html"},
     {"name": "BYO Intro", "url": "byo_intro.html"},
     {"name": "Hobby", "url": "hobby/index.html"},
-    {"name": "Drawing", "url": "drawing.html"}
+    {"name": "Drawing", "url": "drawing.html"},
+    {"name": "Peer Review 2", "url": "review2.html"}
 ],
 "extranav":[
-    {"name": "CRAPPY Website", "url": "stuff/CRAPPy&.html"},
-    {"name": "Peer Review 1", "url": "review1.html"},
-    {"name": "Peer Review 2", "url": "review2.html"}
+    {"name": "CRAPPY Website", "url": "stuff/CRAPPy&.html"}
+    
 ],
 "footersocial": [
     {"name": "Webspace", "url": "https://webpages.charlotte.edu/ajoshi46/"},
