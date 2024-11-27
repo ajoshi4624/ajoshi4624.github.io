@@ -291,3 +291,8 @@ button[type="reset"]:hover {
   display: block;
   margin: 0 auto;
 }
+
+.reviewfig {
+  width: 75%;
+  height: 75%;
+}
