@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/akkafavicon.png">
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>See Us In Action!</h2>
+        <div class="slideshow">
+            <button class="prev">&lt;</button>
+            <img class="main-slide" src="images/tutoring1.jpg" alt="Slide 1">
+            <button class="next">&gt;</button>
+            <div class="thumbnail-row">
+                <img src="images/tutoring1.jpg" alt="Thumbnail 1" class="thumbnail active">
+                <img src="images/tutoring2.jpg" alt="Thumbnail 2" class="thumbnail">
+                <img src="images/tutoring3.jpg" alt="Thumbnail 3" class="thumbnail">
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validate-html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validate-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/gallery.js"></script>
+</body>
+
+</html>
